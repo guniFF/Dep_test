@@ -1,7 +1,5 @@
-2024-07-11 17:23:17.157 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-07-11 17:23:17.160 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists users cascade 
-2024-07-11 17:23:17.162 [SpringApplicationShutdownHook] TRACE o.h.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@158e6185] for TypeConfiguration
-2024-07-11 17:23:17.162 [SpringApplicationShutdownHook] DEBUG o.h.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@402d856c] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@158e6185]
-2024-07-11 17:23:17.167 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-07-11 17:23:17.167 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-11 17:23:17.168 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-12 17:34:38.222 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12 17:34:38.226 [SpringApplicationShutdownHook] TRACE o.h.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@447e178d] for TypeConfiguration
+2024-07-12 17:34:38.226 [SpringApplicationShutdownHook] DEBUG o.h.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@376e7d92] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@447e178d]
+2024-07-12 17:34:38.229 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-12 17:34:38.233 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

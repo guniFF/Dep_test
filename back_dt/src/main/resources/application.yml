@@ -2,20 +2,19 @@ spring:
   application:
     name: demo
 
-#  datasource:
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://localhost:3305/demo?serverTimezone=Asia/Seoul
-#    username: root
-#    password: 1234
-#
-#  jpa:
-#    properties:
-#      hibernate:
-#        show_sql: true
-#        format_sql: true
-#    hibernate:
-#      ddl-auto: create
-#    database-platform: org.hibernate.dialect.MySQLDialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/MySQL
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
 
   mvc:
     pathmatch:

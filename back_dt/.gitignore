@@ -35,3 +35,12 @@ out/
 
 ### VS Code ###
 .vscode/
+
+###환경변수
+.env*
+
+###DB볼륨
+data_volume/*
+
+###젠킨스
+.jenkins/*

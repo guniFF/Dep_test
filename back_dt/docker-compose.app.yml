@@ -1,0 +1,40 @@
+
+x-environments:
+  &default
+    env_file: .env.dev  # 기본 환경 파일을 지정합니다.
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    <<: *default
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    <<: *default
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: [ "CMD-SHELL", "mysqladmin ping -h localhost -u${MYSQL_ROOT_USER} -p${MYSQL_ROOT_PASSWORD}" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  mysql_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: data_volume
+      o: bind

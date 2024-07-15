@@ -7,8 +7,6 @@ ARG APP_JAR=demo-0.0.1-SNAPSHOT.jar
 ARG APP_TARGET=build/libs
 
 WORKDIR $APP_HOME
-# 애플리케이션 디렉토리 생성
-#RUN mkdir $APP_HOME
 
 # 애플리케이션 jar 파일을 컨테이너의 /app 디렉토리에 복사
 COPY $APP_TARGET/$APP_JAR $APP_HOME/$APP_JAR

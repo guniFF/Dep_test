@@ -44,3 +44,6 @@ data_volume/*
 
 ###젠킨스
 .jenkins/*
+
+###로그 무시
+logs/*

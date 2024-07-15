@@ -2,6 +2,7 @@ spring:
   application:
     name: demo
 
+#기본 설정 예시(!!사용 하지 마시오!!)
 #  datasource:
 #    url: jdbc:mysql://localhost:3306/MySQL
 #    username: root
@@ -16,7 +17,7 @@ spring:
 #      hibernate:
 #        dialect: org.hibernate.dialect.MySQL8Dialect
 
-
+#환경변수 사용 설정
   datasource:
     url: ${SPRING_DATASOURCE_URL}
     username: ${SPRING_DATASOURCE_USERNAME}

@@ -1,8 +1,8 @@
-# docker-compose-front.yml
 services:
-  frontend:
+  web:
     build:
-      context: ./frontend
-      dockerfile: Dockerfile
+      context: ./front_dt
     ports:
       - "80:80"
+    volumes:
+      - /usr/share/nginx/html

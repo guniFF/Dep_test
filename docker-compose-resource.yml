@@ -1,12 +1,5 @@
 # docker-compose-resource.yml
 services:
-  resource_db:
-    image: mysql:latest
-    environment:
-      MYSQL_ROOT_PASSWORD: your_password
-      MYSQL_DATABASE: your_database
-    ports:
-      - "3306:3306"
   nginx:
     build:
       context: ./nginx
@@ -15,6 +8,6 @@ services:
       - "80:80"
       - "443:443"
     depends_on:
-      - backend1
-      - backend2
-      - frontend
+      - back_dt1
+      - back_dt2
+      - front_dt

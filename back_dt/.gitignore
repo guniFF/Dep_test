@@ -37,13 +37,16 @@ out/
 .vscode/
 
 ###환경변수
-.env*
+.env-dev
 
 ###DB볼륨
-data_volume/*
+mysql_data/*
+
 
 ###젠킨스
 .jenkins/*
 
 ###로그 무시
+logs/
 logs/*
+logs/**/*

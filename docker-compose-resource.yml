@@ -1,5 +1,4 @@
 # docker-compose-resource.yml
-version: "3"
 services:
   resource_db:
     image: mysql:latest

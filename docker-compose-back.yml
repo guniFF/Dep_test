@@ -1,5 +1,4 @@
 # docker-compose-backend.yml
-version: "3"
 services:
   backend1:
     build:

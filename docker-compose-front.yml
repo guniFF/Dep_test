@@ -1,5 +1,4 @@
 # docker-compose-front.yml
-version: "3"
 services:
   frontend:
     build:

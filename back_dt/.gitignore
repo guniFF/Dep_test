@@ -41,6 +41,8 @@ out/
 
 ###DB볼륨
 mysql_data/*
+!mysql_data/README.md
+
 
 
 ###젠킨스

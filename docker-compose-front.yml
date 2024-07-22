@@ -1,8 +1,14 @@
 services:
-  web:
+  front_dt:
     build:
       context: ./front_dt
     ports:
-      - "80:80"
+      - "5173:80"
     volumes:
       - /usr/share/nginx/html
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge

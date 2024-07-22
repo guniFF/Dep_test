@@ -6,8 +6,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80:80"
-      - "443:443"
-    depends_on:
-      - back_dt1
-      - back_dt2
-      - front_dt
+      - "8080:8080"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    external: true

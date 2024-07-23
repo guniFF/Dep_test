@@ -1,5 +1,6 @@
 services:
   front_dt:
+    container_name: front_dt
     build:
       context: ./front_dt
     ports:

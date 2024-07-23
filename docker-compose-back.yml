@@ -2,7 +2,9 @@ x-environments: &default
   env_file: .env # 기본 환경 파일을 지정합니다.
 
 services:
+
   back_dt1:
+    container_name: back_dt1
     build:
       context: ./back_dt/
       dockerfile: Dockerfile
@@ -16,6 +18,7 @@ services:
       - mynetwork
 
   back_dt2:
+    container_name: back_dt2
     build:
       context: ./back_dt/
       dockerfile: Dockerfile
@@ -30,6 +33,7 @@ services:
 
   mysql:
     image: mysql:8.0
+    container_name: mysql
     ports:
       - "3306:3306"
     <<: *default
